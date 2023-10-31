@@ -1,0 +1,12 @@
+n=int(input())
+max=0
+for i in range(n):
+    inp=input().split()
+    for j in range(len(inp)):
+        name,m,p,c=inp[j].split(':')
+        m,p,c=int(m),int(p),int(c)
+        sum=m+p+c
+        if sum>max:
+            max=sum
+            maxstud=name
+print(maxstud)
